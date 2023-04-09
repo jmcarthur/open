@@ -4,6 +4,7 @@ module Stan.AST.Pretty where
 
 import Stan.AST
 import Text.PrettyPrint.HughesPJClass
+import Prelude hiding ((<>))
 
 instance Pretty Stan where
   pPrint (Model ds) = text "model {"
